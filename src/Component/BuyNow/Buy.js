@@ -73,7 +73,7 @@ const Buy = () => {
             )}
           </div>
 
-          <div className="col-lg-6 col-md-12" data-aos="fade-left">
+          <div className="col-lg-6 col-md-12" data-aos="fade-up">
             <div className="card p-4 h-100">
               <h5 className="mb-4">معلومات الدفع</h5>
               <form>

@@ -20,7 +20,7 @@ function About(){
           {/* appear in 1550px only*/}
           {/* section 1 */}
           <div className="About d-flex justify-content-evenly ">
-            <div data-aos="fade-right" data-aos-duration="3000" className="about-L " >
+            <div data-aos="fade-up" data-aos-duration="3000" className="about-L " >
               <h3 style={{textShadow:"1px 1px 5px black"}} > Welcome to our shopping site </h3>
               <h4 className="pt-2 pb-2 text-primary  ">1-🛍 Who We Are</h4>
               <h5 className="text-about  text-white " style={{textShadow:"3px 3px 5px black"}}>
@@ -65,13 +65,13 @@ function About(){
               className="about-img "
               src={About2}
               alt="NoImage"
-              data-aos="fade-left" 
+              // data-aos="fade-left" 
               data-aos-duration="3000"
             />
           </div>
           {/* section 2 */}
           <img
-          data-aos="fade-right"
+          // data-aos="fade-right"
            data-aos-duration="3000"
             loading="lazy"
             className="newAbout-img  d-none pb-5"
@@ -81,14 +81,14 @@ function About(){
           {/* appear in 1550px only*/}
           <div className="About d-flex justify-content-evenly ">
             <img
-            data-aos="fade-right" 
+            // data-aos="fade-right" 
             data-aos-duration="3000"
               loading="lazy"
               className="about-img "
               src={About1}
               alt="NoImage"
             />
-            <div data-aos="fade-left" data-aos-duration="2000" className="about-R">
+            <div data-aos="fade-right" data-aos-duration="2000" className="about-R">
               <h4 className=" pb-2 text-primary">3-🧩 What We Offer</h4>
               <h5 className="pt-2 pb-2 text-white"  style={{textShadow:"3px 3px 5px black"}}>
                 At Student Hostel, we provide a range of high-quality facilities

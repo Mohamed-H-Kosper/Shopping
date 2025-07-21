@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import image1 from '../images/image1.jpg';
 import image2 from '../images/image2.jpg';
 import image3 from '../images/image3.jpg';
-
+import "../Home/HomeImage.css";
 function Offer(props ){
         const [products1,setProducts1] = useState([]);
         const [products2,setProducts2] = useState([]);
@@ -54,10 +54,10 @@ function Offer(props ){
        <>
              <div className='container-fluid mt-5 mb-5 '>
              <div className='row  '>
-             <h2 className="text-white fs-4 fw-bold" style={{textShadow:"2px 2px 8px black"}} data-aos="fade-left">Offer available now !</h2>
+             <h2 className="text-white fs-4 fw-bold" style={{textShadow:"2px 2px 8px black"}} data-aos="fade-up">Offer available now !</h2>
              {products1.map((product) =>{
                  return(
-                     <div className='   mt-5 mb-5 p-5 offer-product bg-white' key={product.id} data-aos="fade-right">
+                     <div className='   mt-5 mb-5 p-5 offer-product bg-white' key={product.id} data-aos="fade-down">
                      <div className='col-xl-4 container-image  '>
                      <img className='image-offer' src={product.image} alt="NoPhoto"  />
                      </div>
@@ -68,8 +68,8 @@ function Offer(props ){
                      <h2 className='title-product text-dark mt-2 fs-5'>{product.description}</h2>
                      <h2 className='title-product text-dark mt-5 fs-5'><span className='title-product text-info fs-4'>Category: </span>{product.category}</h2>
                      <div className='d-flex justify-content-end btns'>
-                     <button type='button'  className="btn btn-sm btn-secondary btn-cart mt-5 " onClick={() =>onAddCart(product)} data-aos="fade-left">Add to Cart</button>
-                     {ShowButton ? <Link className="btn btn-success p-2 btn-details fs-5 mt-5 " id='btn-more'  to={`/product/${product.id}`} data-aos="fade-right">More Details</Link>:null}
+                     <button type='button'  className="btn btn-sm btn-secondary btn-cart mt-5 " onClick={() =>onAddCart(product)} data-aos="zoom-in">Add to Cart</button>
+                     {ShowButton ? <Link className="btn btn-success p-2 btn-details fs-5 mt-5 " id='btn-more'  to={`/product/${product.id}`} data-aos="zoom-out">More Details</Link>:null}
                      
                      </div>
                      </div>
@@ -85,14 +85,14 @@ function Offer(props ){
         </div>
         <div id="carouselExampleDark" className="carousel slide" data-bs-ride="carousel">
   <div className="carousel-inner">
-    <div className="carousel-item active" data-bs-interval="3000">
-      <img src={image2} className="d-block w-100" alt="No img please check internet"/>
+    <div className="carousel-item active img-home2" data-bs-interval="3000">
+      <img src={image2} className="d-block w-100 imageHome" alt="No img please check internet"/>
     </div>
-    <div className="carousel-item" data-bs-interval="3000">
-      <img src={image1} className="d-block w-100" alt="No img please check internet"/>
+    <div className="carousel-item img-home2" data-bs-interval="3000">
+      <img src={image1} className="d-block w-100 imageHome" alt="No img please check internet"/>
     </div>
-    <div className="carousel-item" data-bs-interval="3000">
-      <img src={image3} className="d-block w-100" alt="No img please check internet"/>
+    <div className="carousel-item img-home2" data-bs-interval="3000">
+      <img src={image3} className="d-block w-100 imageHome" alt="No img please check internet"/>
     </div>
   </div>
         <button className="carousel-control-prev  " type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
@@ -106,10 +106,10 @@ function Offer(props ){
       </div>
       </div>
       
-            <h2 className="text-white fs-4 fw-bold" style={{textShadow:"2px 2px 8px black"}} data-aos="fade-left" >Offer available now !</h2>
+            <h2 className="text-white fs-4 fw-bold" style={{textShadow:"2px 2px 8px black"}} data-aos="fade-up" >Offer available now !</h2>
              {products2.map((product) =>{
                  return(
-                     <div className='   mt-5 mb-5 p-5 offer-product bg-white' key={product.id} data-aos="fade-right">
+                     <div className='   mt-5 mb-5 p-5 offer-product bg-white' key={product.id} data-aos="fade-down">
                      <div className='col-xl-4 container-image  '>
                      <img className='image-offer' src={product.image} alt="NoPhoto"  />
                      </div>
@@ -120,18 +120,18 @@ function Offer(props ){
                      <h2 className='title-product text-dark mt-2 fs-5'>{product.description}</h2>
                      <h2 className='title-product text-dark mt-5 fs-5'><span className='title-product text-info fs-4'>Category: </span>{product.category}</h2>
                      <div className='d-flex justify-content-end btns'>
-                     <button  className="btn btn-sm btn-secondary btn-cart mt-5 " onClick={() =>onAddCart(product)}  data-aos="fade-left">Add to Cart</button>
-                     {ShowButton ? <Link className="btn btn-success p-2 btn-details fs-5 mt-5  " id='btn-more'  to={`/product/${product.id}`} data-aos="fade-right">More Details</Link>:null}
+                     <button  className="btn btn-sm btn-secondary btn-cart mt-5 " onClick={() =>onAddCart(product)}  data-aos="zoom-in">Add to Cart</button>
+                     {ShowButton ? <Link className="btn btn-success p-2 btn-details fs-5 mt-5  " id='btn-more'  to={`/product/${product.id}`} data-aos="zoom-out">More Details</Link>:null}
                      </div>
                      </div>
                      </div>  
                  )
              })}
                
-             <h2 className="text-white fs-4 fw-bold" style={{textShadow:"2px 2px 8px black"}} data-aos="fade-left">Offer available now !</h2>
+             <h2 className="text-white fs-4 fw-bold" style={{textShadow:"2px 2px 8px black"}} data-aos="fade-up">Offer available now !</h2>
              {products3.map((product) =>{
                  return(
-                     <div className='   mt-5 mb-5 p-5 offer-product bg-white' key={product.id} data-aos="fade-right">
+                     <div className='   mt-5 mb-5 p-5 offer-product bg-white' key={product.id} data-aos="fade-down">
                      <div className='col-xl-4 container-image  '>
                      <img className='image-offer' src={product.image} alt="NoPhoto"  />
                      </div>
@@ -142,18 +142,18 @@ function Offer(props ){
                      <h2 className='title-product text-dark mt-2 fs-5'>{product.description}</h2>
                      <h2 className='title-product text-dark mt-5 fs-5'><span className='title-product text-info fs-4'>Category: </span>{product.category}</h2>
                      <div className='d-flex justify-content-end btns'>
-                     <button  className="btn btn-sm btn-secondary btn-cart mt-5 " onClick={() =>onAddCart(product)} data-aos="fade-left">Add to Cart</button>
-                     {ShowButton ? <Link className="btn btn-success p-2 btn-details fs-5 mt-5" id='btn-more'  to={`/product/${product.id}`} data-aos="fade-right">More Details</Link>:null}
+                     <button  className="btn btn-sm btn-secondary btn-cart mt-5 " onClick={() =>onAddCart(product)} data-aos="zoom-in">Add to Cart</button>
+                     {ShowButton ? <Link className="btn btn-success p-2 btn-details fs-5 mt-5" id='btn-more'  to={`/product/${product.id}`} data-aos="zoom-out">More Details</Link>:null}
                      </div>
                      </div>
                      </div>  
                  )
              })}
                
-             <h2 className="text-white fs-4 fw-bold" style={{textShadow:"2px 2px 8px black"}} data-aos="fade-left">Offer available now !</h2> 
+             <h2 className="text-white fs-4 fw-bold" style={{textShadow:"2px 2px 8px black"}} data-aos="fade-up">Offer available now !</h2> 
              {products4.map((product) =>{
                  return(
-                     <div className='   mt-5 mb-5 p-5 offer-product bg-white' key={product.id} data-aos="fade-right">
+                     <div className='   mt-5 mb-5 p-5 offer-product bg-white' key={product.id} data-aos="fade-down">
                      <div className='col-xl-4 container-image  '>
                      <img className='image-offer' src={product.image} alt="NoPhoto"  />
                      </div>
@@ -164,8 +164,8 @@ function Offer(props ){
                      <h2 className='title-product text-dark mt-2 fs-5'>{product.description}</h2>
                      <h2 className='title-product text-dark mt-5 fs-5'><span className='title-product text-info fs-4'>Category: </span>{product.category}</h2>
                      <div className='d-flex justify-content-end btns'>
-                     <button  className="btn btn-sm btn-secondary btn-cart mt-5 " onClick={() =>onAddCart(product)} data-aos="fade-left">Add to Cart</button>
-                     {ShowButton ? <Link className="btn btn-success p-2 btn-details fs-5 mt-5  " id='btn-more'  to={`/product/${product.id}`} data-aos="fade-right">More Details</Link>:null}
+                     <button  className="btn btn-sm btn-secondary btn-cart mt-5 " onClick={() =>onAddCart(product)} data-aos="zoom-in">Add to Cart</button>
+                     {ShowButton ? <Link className="btn btn-success p-2 btn-details fs-5 mt-5  " id='btn-more'  to={`/product/${product.id}`} data-aos="zoom-out">More Details</Link>:null}
                      </div>
                      </div>
                      </div>  

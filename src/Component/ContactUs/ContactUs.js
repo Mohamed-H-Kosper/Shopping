@@ -93,7 +93,7 @@ function ContactUs() {
                 121 Rock Sreet, 21 Avenue, New York, NY 92103-9000
               </h5>
             </div>
-            <div className="box1 bg-info text-white col-xl-3  col-md-5 col-12 mt-5 ml-2" data-aos="fade-left">
+            <div className="box1 bg-info text-white col-xl-3  col-md-5 col-12 mt-5 ml-2" data-aos="fade-right">
               <h4 className="fw-bold text mt-5">
                 <FontAwesomeIcon icon={faHourglass} /> HOURS
               </h4>

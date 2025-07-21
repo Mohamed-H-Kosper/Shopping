@@ -6,7 +6,7 @@
 }
 @media (max-width:650px) {
     .img-home ,.image-brands{
-        height: 26vh !important;
+        height: 19vh !important;
     }
     .imageHome , .image-brands{
                 height:100% !important ;
@@ -14,5 +14,8 @@
     }
     .image-brands{
     margin-top: -4% !important;
+    }
+    .img-home2{
+        height: 19vh !important;
     }
 }
