@@ -3,18 +3,18 @@ import { Link } from "react-router-dom";
 import Swal from 'sweetalert2';
 import './Products.css';
 function Products(){
-    const [Product , setProduct]=useState([]);
+    const [products , setProduct]=useState([]);
 
     useEffect(()=>{
         getAllProducts();
     },[])
 
     const getAllProducts=()=>{
-        fetch('http://localhost:9000/products')
+        fetch('https://api.jsonbin.io/v3/b/687e51297b4b8670d8a4e427')
         .then((response)=>(response.json()))
         .then((data)=>
-            {setProduct(data)
-    console.log(data)
+            {setProduct(data.record.products)
+    console.log("data",data)
     })  
       };
     const getDeleteProducts = (productId)=>{
@@ -33,7 +33,7 @@ function Products(){
                     text: "Your product has been deleted.",
                     icon: "success"
                 });
-          fetch(`http://localhost:9000/products/${productId}`,{
+          fetch(`https://api.jsonbin.io/v3/b/687e51297b4b8670d8a4e427/${productId}`,{
             method:'DELETE',
         })
         .then((response)=>(response.json()))
@@ -61,7 +61,7 @@ function Products(){
                 </tr>
             </thead>
             <tbody>
-            {Product.map((product)=>{
+            {products.map((product)=>{
                 return(
                     <tr key={product.id}>
                     <td className="fw-bold fs-5 col-1" >{product.id}</td>

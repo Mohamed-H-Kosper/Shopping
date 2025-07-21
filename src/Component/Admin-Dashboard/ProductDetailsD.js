@@ -6,10 +6,13 @@ function ProductDetailsD() {
 
   const [ProductD, setProductD] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:9000/products/${productId}`)
+    fetch(`https://api.jsonbin.io/v3/b/687e51297b4b8670d8a4e427/${productId}`)
       .then((response) => response.json())
-      .then((data) => setProductD(data));
-  });
+      .then((data) =>{ 
+        setProductD(data);
+      console.log('data.record.products',data);
+  })
+  },[]);
    return (
         <div className="container-fluid ">
         <div className="row">
