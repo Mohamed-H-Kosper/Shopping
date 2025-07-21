@@ -1,0 +1,22 @@
+.imageD{
+    width: 50% !important;
+    height:100px !important;
+}
+.btn-add{
+    width: 25%;
+}
+@media (max-width:767px){
+    .imageD ,.Description-name {
+        display: none;
+    }
+      .btn-add{
+    width: 100%;
+}
+}
+@media (max-width:900px){
+    .btns{
+        flex-direction: column;
+        gap:5px;
+    }
+
+}

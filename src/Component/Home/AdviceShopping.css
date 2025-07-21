@@ -1,0 +1,15 @@
+.c-feature{
+    color: white;
+    background-color: #3b608b;
+    border-radius: 7%;
+    flex-wrap: wrap;
+    max-width: 100% !important;
+    overflow: hidden;
+
+}
+.feature{
+    max-width: 100% !important;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+}

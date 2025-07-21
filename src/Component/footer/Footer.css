@@ -1,0 +1,28 @@
+.footer-bg{
+    background-color: #212529;
+}
+.copy {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.Icons{
+    margin-left: 1.65em ;
+}
+.icons{
+    font-size: 20px;
+background-color: red;
+color:blue;
+    }
+    @media (max-width:370px) {
+        .Icons li span{
+            font-size: 15px !important;
+        }
+        .Icons li .email{
+            font-size: 14px !important;
+        }
+        .icons{
+            font-size: 15px !important;
+        }
+    }
+    .link-profile{
+        color: white !important;
+    }

@@ -1,0 +1,60 @@
+.container{
+    color:white;
+}
+.card-product{
+    font-family: 'Cambria, Cochin, Georgia, Times, Times New Roman, serif';
+    height:500px !important;
+    width:100%;
+    max-width: 100%;
+}
+.contain-details{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.card-img-top{
+    width: 60% !important;
+    height: 55% !important;
+    margin-left: 20%;
+    object-fit: contain;
+}
+.card-title{
+    font-size:1.3rem;
+    font-weight: 900;
+}
+.card-text{
+    font-size: 1rem;
+}
+#btn-more{
+    float:right;
+    margin-bottom:20px ;
+}
+.btn-all{
+    font-weight: bold !important;
+    font-size: 15px;
+}
+.btns .btn-all{
+    margin-top: 2% !important;
+    margin-left: 1% !important;
+}
+.container-fluid{
+    width:95% !important;
+}
+.price-more{
+    display: flex;
+align-items: center ;
+justify-content: space-around;
+}
+.spinner , .wait{
+    font-size: 20px;
+    color:#0d6efd !important;
+    font-weight: bolder;
+}
+.wait{
+    margin-left: 1% !important;
+}
+@media (max-width:768px) {
+    .btn-all{
+    width: 100%;
+    }
+}

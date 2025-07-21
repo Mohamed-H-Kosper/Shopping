@@ -1,0 +1,6 @@
+.imageHome{
+    height:50% !important;
+    background-size: cover;
+    object-fit: contain;
+    margin-top: -4% !important;
+}

@@ -1,0 +1,50 @@
+.Login{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    height: 480px !important;
+    /* background-color: darkblue; */
+}
+
+.username{
+    padding-top: 25px !important;
+padding: 12px;
+font-size: 25px;
+}
+.password{
+    padding: 20px;
+font-size: 25px;
+
+}
+.checkbox{
+    padding: 20px;
+font-size: 20px;
+
+}
+label{
+    color: #0d6efd;
+    margin-left: 20px;
+}
+.label-form{
+    margin-right: 20px;
+
+}
+.Login-form{
+width: 30% !important;
+font-size: 21px !important;
+font-weight: 600 !important;
+text-align: center;
+height: 50px;
+}
+.total-form{
+    width:500px;
+    height: 390px;
+    background-color: rgb(218, 224, 224);
+}
+@media (max-width:530px) {
+    .total-form{
+    width:280px;
+}
+}
+

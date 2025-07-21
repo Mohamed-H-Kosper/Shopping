@@ -1,0 +1,12 @@
+.f-product{
+    padding: 1% 0% 1% 0%  ;
+}
+#gap-scroll{
+    margin-bottom: 3% !important;
+}
+#btn-more{
+    float:right;
+    margin-top:5px ;
+    padding: 5px;
+    font-size: smaller;
+}
