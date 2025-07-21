@@ -6,11 +6,12 @@ function ProductDetailsD() {
 
   const [ProductD, setProductD] = useState([]);
   useEffect(() => {
-    fetch(`https://api.jsonbin.io/v3/b/687e51297b4b8670d8a4e427/${productId}`)
+    fetch(` http://localhost:9000/products/${productId}`)
       .then((response) => response.json())
       .then((data) =>{ 
         setProductD(data);
       console.log('data.record.products',data);
+
   })
   },[]);
    return (
@@ -27,8 +28,7 @@ function ProductDetailsD() {
         <h4 className="pt-2">{ProductD.description}</h4>
         <h5 className="pt-4"><span className="explan">Category:</span> {ProductD.category}</h5>
         <div id="price" className="d-flex gap-4">
-          <button id="buy" className="btn btn-success">Buy Now</button>
-          <h6 className="prices text-info fs-4 fw-bold "> {ProductD.price} $ </h6>
+          <h6 className="prices text-info fs-4 fw-bold ">Price : {ProductD.price} $ </h6>
           </div>
           </div>
         </div>

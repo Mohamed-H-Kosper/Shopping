@@ -13,7 +13,7 @@ function EditProducts() {
 
     const formSubmit = (e) => {
       e.preventDefault();
-        axios.put(`https://api.jsonbin.io/v3/b/687e51297b4b8670d8a4e427/${productId}`, {
+        axios.put(` http://localhost:9000/products/${productId}`, {
           title: title,
           price: price,
           description: description

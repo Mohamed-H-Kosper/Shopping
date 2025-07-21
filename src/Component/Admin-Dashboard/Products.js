@@ -10,10 +10,10 @@ function Products(){
     },[])
 
     const getAllProducts=()=>{
-        fetch('https://api.jsonbin.io/v3/b/687e51297b4b8670d8a4e427')
+        fetch('http://localhost:9000/products')
         .then((response)=>(response.json()))
         .then((data)=>
-            {setProduct(data.record.products)
+            {setProduct(data)
     console.log("data",data)
     })  
       };
@@ -33,7 +33,7 @@ function Products(){
                     text: "Your product has been deleted.",
                     icon: "success"
                 });
-          fetch(`https://api.jsonbin.io/v3/b/687e51297b4b8670d8a4e427/${productId}`,{
+          fetch(`http://localhost:9000/products/${productId}`,{
             method:'DELETE',
         })
         .then((response)=>(response.json()))
