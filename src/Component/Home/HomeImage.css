@@ -4,3 +4,15 @@
     object-fit: contain;
     margin-top: -4% !important;
 }
+@media (max-width:650px) {
+    .img-home ,.image-brands{
+        height: 26vh !important;
+    }
+    .imageHome , .image-brands{
+                height:100% !important ;
+                object-fit: cover;
+    }
+    .image-brands{
+    margin-top: -4% !important;
+    }
+}

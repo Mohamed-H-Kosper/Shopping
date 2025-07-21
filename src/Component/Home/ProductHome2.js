@@ -84,10 +84,10 @@ function ProductsHome2({onAddCart}) {
                                        </div>
                                        <div className='price-more'>
                                        <p className="card-price text-info fs-4 fw-bold">{product.price} $</p>
-                               <Link className="btn btn-success fw-bold" id='btn-more' style={{fontSize:"15px"}} to={`/product/${product.id}`}>More Details</Link>
+                               <Link className="btn btn-success fw-bold" id='btn-more' style={{fontSize:"15px"}} to={`/product/${product.id}`} data-aos="fade-left" data-aos-duration="3000">More Details</Link>
 
                                             </div>
-                                       <button  className="btn btn-sm btn-secondary mb-3 w-100" style={{fontSize:"16px"}} onClick={()=>onAddCart(product)}>Add to Cart</button>
+                                       <button  className="btn btn-sm btn-secondary mb-3 w-100" style={{fontSize:"16px"}} onClick={()=>onAddCart(product)} data-aos="fade-right" data-aos-duration="3000">Add to Cart</button>
                                             </div>
                                        </div>
                                      </div>

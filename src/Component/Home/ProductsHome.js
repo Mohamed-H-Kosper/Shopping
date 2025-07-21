@@ -119,6 +119,7 @@ function ProductsHome({onAddCart}) {
                         style={{ fontSize: "15px" }}
                         id="btn-more"
                         to={`/product/${product.id}`}
+                        data-aos="fade-right"
                       >
                         More Details
                       </Link>
@@ -128,6 +129,7 @@ function ProductsHome({onAddCart}) {
                       className="btn btn-sm btn-secondary  mb-3 w-100"
                       style={{ fontSize: "16px" }}
                       onClick={() => {onAddCart(product)}} // منع التركيز لتفادي}
+                      data-aos="fade-left"
                     >
                       Add to Cart
                     </button>
