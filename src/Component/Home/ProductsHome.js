@@ -62,6 +62,7 @@ function ProductsHome({onAddCart}) {
           <h2
             className="f-product fw-bold fs-3 text-white"
             style={{ textShadow: "2px 2px 8px black" }}
+            data-aos="fade-down"
           >
             Featured products
           </h2>
@@ -85,6 +86,7 @@ function ProductsHome({onAddCart}) {
           className="d-flex overflow-auto gap-3 py-2"
           ref={scrollRef}
           style={{ scrollBehavior: "smooth" }}
+          data-aos="fade-right"
         >
           {products.map((product) => (
             <div

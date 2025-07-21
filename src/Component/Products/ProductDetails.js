@@ -41,21 +41,21 @@ function ProductDetails() {
         <div className="container-fluid  ">
         <div className="row">
         <div className="card mt-5 mb-5" >
-        <div className="contain-details  ">
+        <div className="contain-details" >
       <div className="col-xl-6 col-lg-8 col-md-12 mt-5">
-        <img className="image-details" src={product.image} alt="no" />
+        <img className="image-details" src={product.image} alt="no" data-aos="zoom-out"/>
       </div>
-      <div className="card-body col-xl-6 col-lg-4 col-md-12 mt-5">
-        <h2 className="pb-4 fs-3 title-details">{product.title}</h2>
-        <span className="explan ">description:</span>
-        <h4 className="pt-2 description">{product.description}</h4>
-        <h5 className="pt-4 description"><span className="explan">Category:</span> {product.category}</h5>
+      <div className="card-body col-xl-6 col-lg-4 col-md-12 mt-5" >
+        <h2 className="pb-4 fs-3 title-details" data-aos="fade-down">{product.title}</h2>
+        <span className="explan " data-aos="fade-left" >description:</span>
+        <h4 className="pt-2 description" data-aos="fade-left">{product.description}</h4>
+        <h5 className="pt-4 description" data-aos="fade-left"><span className="explan" data-aos="fade-right">Category:</span> {product.category}</h5>
         <div id="price" className="d-flex gap-4">
         <div className="d-flex justify-content-center align-items-center mt-5">
            <Link  style={{textDecoration:'none' , color:'white'}} to={`/product/${product.id}/buy`}  >
-           <button id="buy"  className="btn btn-success p-3 me-4"> Buy Now </button>
+           <button id="buy"  className="btn btn-success p-3 me-4" data-aos="fade-up"> Buy Now </button>
            </Link> 
-          <h6 className="prices text-info fs-4 fw-bold "> {product.price} $ </h6>
+          <h6 className="prices text-info fs-4 fw-bold " data-aos="fade-down"> {product.price} $ </h6>
            </div>
           </div>
           </div>

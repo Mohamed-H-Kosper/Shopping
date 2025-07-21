@@ -93,18 +93,18 @@ function ProductList(props){
     return(
         <>
         <div className="container-fluid  p-3 ">
-        <div className="d-flex mt-4 mb-1 m-5 align-items-center justify-content-end form-search " role="search">
-                <input type="text" className="form  co-bg-light search-products" onChange={handleChange} value={products.category} id="search"  placeholder="Search" aria-label="Search"
+        <div className="d-flex mt-4 mb-1 m-5 align-items-center justify-content-end form-search " role="search" >
+                <input data-aos="fade-left" type="text" className="form  co-bg-light search-products" onChange={handleChange} value={products.category} id="search"  placeholder="Search" aria-label="Search"
                 />
-              <img  src={imageNav2} alt="no" className="btn btn-primary icon-search-products"  id="icon-search"/>
+              <img data-aos="fade-left" src={imageNav2} alt="no" className="btn btn-primary icon-search-products"  id="icon-search"/>
               </div>
         <div className=" btns">
-        <button  className="btn-all btn btn-dark  p-2 m-2 "  onClick={()=>{getProducts();}}>All Products</button>
+        <button  className="btn-all btn btn-dark  p-2 m-2 "  onClick={()=>{getProducts();}} data-aos="fade-up">All Products</button>
         {categories.map((cat ) => {    
                 return(
                     <button className="btn-all btn btn-secondary p-2 m-2 " style={{border:'none' }}  key={cat} 
                     onClick={()=>getProductInCategories(cat)}
-                     >{cat} </button>
+                    data-aos="fade-right" >{cat} </button>
                 );
             })}
             </div>
@@ -114,7 +114,7 @@ function ProductList(props){
             <div className="row  bg-light mt-3">
             {!filters|| filters.length===0 ? (<h2 className="text-center p-5 text-primary">No Result In Search</h2>) :(filters.map(( filter) =>   {   //لازم اشغلها عشان ازرار فلتر تشتغل  
                 return(
-                    <div className="col-xl-4 col-lg-6 col-12 product-new" key={filter.id}>
+                    <div className="col-xl-4 col-lg-6 col-12 product-new" key={filter.id} data-aos="zoom-in">
                       <div className='container-fluid'>
                               <div className='row'>
                                     <div className="card card-product mt-5  ">

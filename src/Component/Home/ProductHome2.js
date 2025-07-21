@@ -58,7 +58,7 @@ function ProductsHome2({onAddCart}) {
   return (
     <div className="container-fluid " id="gap-scroll">
       <div className="d-flex justify-content-between align-items-center mb-2 mt-5">
-      <h2 className="f-product fw-bold fs-3 text-secondary ">Products Offers</h2>
+      <h2 className="f-product fw-bold fs-3 text-secondary " data-aos="fade-down">Products Offers</h2>
       <div>
           <button className="btn btn-outline-dark me-2" onClick={() => scroll('left')}>{<FontAwesomeIcon icon={faArrowLeft} />}</button>
           <button className="btn btn-outline-dark" onClick={() => scroll('right')}>{<FontAwesomeIcon icon={faArrowRight} />}</button>
@@ -69,6 +69,7 @@ function ProductsHome2({onAddCart}) {
        className="d-flex overflow-auto gap-3 "
        ref={scrollRef}
        style={{scrollBehavior:'smooth'}}
+       data-aos="fade-right"
       >
     {products.map(product => (
       <>

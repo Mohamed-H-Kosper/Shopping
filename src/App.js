@@ -18,8 +18,17 @@ import { useEffect, useLayoutEffect, useState } from "react";
 import Background from "./Component/Background-Animate/Background";
 import Navbar from "./Component/Navbar/Navbar";
 import Buy from "./Component/BuyNow/Buy";
+import Aos from "aos";
+import 'aos/dist/aos.css';
 
 function App() {
+    useEffect(()=>{
+                       Aos.init({
+                           duration:3000,
+                           once:false
+                       })
+                   },[])
+
   const [token ,setToken] = useState(() => localStorage.getItem('token') ?? null);
 const [scrollPosition, setScrollPosition] = useState(null);
  // add to cart (Bell)

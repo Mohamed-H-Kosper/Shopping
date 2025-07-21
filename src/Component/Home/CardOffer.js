@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react';
 import './CardOffer.css' ;
 import { Link } from 'react-router-dom';
+
 function CardOffer(props){
     const [products,setProducts] = useState([]);
    const ShowButton =props; 
    const {onAddCart} =props; 
+        
 useEffect(()=>{
     fetch('https://fakestoreapi.com/products')
     .then((res) => res.json())
@@ -15,12 +17,12 @@ useEffect(()=>{
 },[])
     return(
         <>
-        <div className='container-fluid mt-5 mb-5 '>
+        <div className='container-fluid mt-5 mb-5 ' >
         <div className='row  '>
-        <h2 className='text-white fs-4 fw-bold' style={{textShadow:"2px 2px 7px black"}}>Offer available now !</h2>
+        <h2 className='text-white fs-4 fw-bold' style={{textShadow:"2px 2px 7px black"}} data-aos="fade-right">Offer available now !</h2>
         {products.map((product) =>{
             return(
-                <div className='   mt-5 mb-5 p-5 offer-product bg-white ' key={product.id}>
+                <div className='   mt-5 mb-5 p-5 offer-product bg-white ' key={product.id} data-aos="fade-up">
                 <div className='col-xl-4 container-image  '>
                 <img className='image-offer' src={product.image} alt="NoPhoto"  />
                 </div>

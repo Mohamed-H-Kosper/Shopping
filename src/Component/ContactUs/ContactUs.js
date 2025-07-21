@@ -21,9 +21,9 @@ function ContactUs() {
         <div className="container-fluid">
           <div className="row">
             <div className="col-xl-5 col-md-6 col-12">
-              <img className="image-contact2" src={contactImg2} alt="NoPhoto" />
+              <img className="image-contact2" src={contactImg2} alt="NoPhoto" data-aos="zoom-out-right" />
             </div>
-            <div className="col-xl-7 col-md-6 col-12">
+            <div className="col-xl-7 col-md-6 col-12" data-aos="fade-left">
               <h1 className="mt-4">Contact Us</h1>
               <div className="mt-5 mb-3 ">
                 <label for="exampleFormControlInput1" className="form-label">
@@ -79,13 +79,13 @@ function ContactUs() {
       <div className="container mt-5 mb-5">
         <div className="row">
           <div className="box">
-            <div className="box1 bg-info text-white col-xl-3 col-md-5 col-12 mt-5">
+            <div className="box1 bg-info text-white col-xl-3 col-md-5 col-12 mt-5" data-aos="fade-right">
               <h4 className="fw-bold text mt-5">
                 <FontAwesomeIcon icon={faPhone} /> CALL US
               </h4>
               <h5 className="text mt-4"> 01111208422</h5>
             </div>
-            <div className="box1 bg-info text-white col-xl-3  col-md-5 col-12 mt-5 ">
+            <div className="box1 bg-info text-white col-xl-3  col-md-5 col-12 mt-5 " data-aos="fade-up">
               <h4 className="fw-bold text mt-5">
                 <FontAwesomeIcon icon={faLocation} /> LOCATION
               </h4>
@@ -93,7 +93,7 @@ function ContactUs() {
                 121 Rock Sreet, 21 Avenue, New York, NY 92103-9000
               </h5>
             </div>
-            <div className="box1 bg-info text-white col-xl-3  col-md-5 col-12 mt-5 ml-2">
+            <div className="box1 bg-info text-white col-xl-3  col-md-5 col-12 mt-5 ml-2" data-aos="fade-left">
               <h4 className="fw-bold text mt-5">
                 <FontAwesomeIcon icon={faHourglass} /> HOURS
               </h4>

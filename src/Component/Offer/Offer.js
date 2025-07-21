@@ -54,10 +54,10 @@ function Offer(props ){
        <>
              <div className='container-fluid mt-5 mb-5 '>
              <div className='row  '>
-             <h2 className="text-white fs-4 fw-bold" style={{textShadow:"2px 2px 8px black"}}>Offer available now !</h2>
+             <h2 className="text-white fs-4 fw-bold" style={{textShadow:"2px 2px 8px black"}} data-aos="fade-left">Offer available now !</h2>
              {products1.map((product) =>{
                  return(
-                     <div className='   mt-5 mb-5 p-5 offer-product bg-white' key={product.id}>
+                     <div className='   mt-5 mb-5 p-5 offer-product bg-white' key={product.id} data-aos="fade-right">
                      <div className='col-xl-4 container-image  '>
                      <img className='image-offer' src={product.image} alt="NoPhoto"  />
                      </div>
@@ -77,7 +77,7 @@ function Offer(props ){
                  )
              })}
 
-                     <div id="carouselExampleDark" className="carousel carousel-dark slide mb-5 mt-5">
+                     <div id="carouselExampleDark" className="carousel carousel-dark slide mb-5 mt-5 " data-aos="zoom-in">
         <div className="carousel-indicators  ">
           <button className="active bg-secondary carouselDash" type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"  aria-current="true" aria-label="Slide 1"></button>
           <button className="bg-secondary carouselDash" type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -106,10 +106,10 @@ function Offer(props ){
       </div>
       </div>
       
-            <h2 className="text-white fs-4 fw-bold" style={{textShadow:"2px 2px 8px black"}}>Offer available now !</h2>
+            <h2 className="text-white fs-4 fw-bold" style={{textShadow:"2px 2px 8px black"}} data-aos="fade-left" >Offer available now !</h2>
              {products2.map((product) =>{
                  return(
-                     <div className='   mt-5 mb-5 p-5 offer-product bg-white' key={product.id}>
+                     <div className='   mt-5 mb-5 p-5 offer-product bg-white' key={product.id} data-aos="fade-right">
                      <div className='col-xl-4 container-image  '>
                      <img className='image-offer' src={product.image} alt="NoPhoto"  />
                      </div>
@@ -128,10 +128,10 @@ function Offer(props ){
                  )
              })}
                
-             <h2 className="text-white fs-4 fw-bold" style={{textShadow:"2px 2px 8px black"}}>Offer available now !</h2>
+             <h2 className="text-white fs-4 fw-bold" style={{textShadow:"2px 2px 8px black"}} data-aos="fade-left">Offer available now !</h2>
              {products3.map((product) =>{
                  return(
-                     <div className='   mt-5 mb-5 p-5 offer-product bg-white' key={product.id}>
+                     <div className='   mt-5 mb-5 p-5 offer-product bg-white' key={product.id} data-aos="fade-right">
                      <div className='col-xl-4 container-image  '>
                      <img className='image-offer' src={product.image} alt="NoPhoto"  />
                      </div>
@@ -150,10 +150,10 @@ function Offer(props ){
                  )
              })}
                
-             <h2 className="text-white fs-4 fw-bold" style={{textShadow:"2px 2px 8px black"}}>Offer available now !</h2> 
+             <h2 className="text-white fs-4 fw-bold" style={{textShadow:"2px 2px 8px black"}} data-aos="fade-left">Offer available now !</h2> 
              {products4.map((product) =>{
                  return(
-                     <div className='   mt-5 mb-5 p-5 offer-product bg-white' key={product.id}>
+                     <div className='   mt-5 mb-5 p-5 offer-product bg-white' key={product.id} data-aos="fade-right">
                      <div className='col-xl-4 container-image  '>
                      <img className='image-offer' src={product.image} alt="NoPhoto"  />
                      </div>

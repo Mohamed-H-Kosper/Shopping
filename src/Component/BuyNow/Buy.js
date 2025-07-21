@@ -50,7 +50,7 @@ const Buy = () => {
         <div className="row">
           <div className="col-lg-6 col-md-12 mb-4 ">
             {product && (
-              <div className="card h-100">
+              <div className="card h-100" data-aos="fade-right" >
                 <img
                   src={product.image}
                   alt={product.title}
@@ -73,7 +73,7 @@ const Buy = () => {
             )}
           </div>
 
-          <div className="col-lg-6 col-md-12">
+          <div className="col-lg-6 col-md-12" data-aos="fade-left">
             <div className="card p-4 h-100">
               <h5 className="mb-4">معلومات الدفع</h5>
               <form>

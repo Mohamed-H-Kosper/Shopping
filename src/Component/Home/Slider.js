@@ -5,8 +5,8 @@ import image3 from '../images/image3.jpg';
 function Slider(){
     return(
       <div className='container-fluid'>
-      <div className='f-product fw-bold fs-3 text-white' style={{textShadow:"2px 2px 8px black"}}>Big Sale Black Friday</div>
-        <div id="carouselExampleDark" className="carousel carousel-dark slide mb-5 mt-5">
+      <div className='f-product fw-bold fs-3 text-white' style={{textShadow:"2px 2px 8px black"}} data-aos="fade-right">Big Sale Black Friday</div>
+        <div id="carouselExampleDark" className="carousel carousel-dark slide mb-5 mt-5" data-aos="zoom-in">
         <div className="carousel-indicators  ">
           <button className="active bg-secondary carouselDash" type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"  aria-current="true" aria-label="Slide 1"></button>
           <button className="bg-secondary carouselDash" type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
