@@ -10,10 +10,10 @@ function Products(){
     },[])
 
     const getAllProducts=()=>{
-        fetch('http://localhost:9000/products')
+        fetch('https://api.jsonbin.io/v3/b/687e51297b4b8670d8a4e427') //http://localhost:9000/products
         .then((response)=>(response.json()))
         .then((data)=>
-            {setProduct(data)
+            {setProduct(data.record.products)
     console.log("data",data)
     })  
       };
