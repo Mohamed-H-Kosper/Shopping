@@ -9,7 +9,7 @@ function AddProducts() {
   const navigate = useNavigate();
   const formSubmit = (e) => {
     e.preventDefault();
-      axios.post(` http://localhost:9000/products`, {
+      axios.post(` https://fakestoreapi.com/products`, {
         title: title,
         price: price,
         description: description

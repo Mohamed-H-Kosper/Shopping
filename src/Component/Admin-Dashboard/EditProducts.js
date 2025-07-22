@@ -13,7 +13,7 @@ function EditProducts() {
 
     const formSubmit = (e) => {
       e.preventDefault();
-        axios.put(`http://localhost:9000/products/${productId}`, {
+        axios.put(`https://fakestoreapi.com/products/${productId}`, {
           title: title,
           price: price,
           description: description

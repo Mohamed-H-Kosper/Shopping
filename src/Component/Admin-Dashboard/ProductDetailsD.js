@@ -6,7 +6,7 @@ function ProductDetailsD() {
 
   const [ProductD, setProductD] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:9000/products/${productId}`)
+    fetch(`https://fakestoreapi.com/products/${productId}`)
       .then((response) => response.json())
       .then((data) =>{ 
         setProductD(data);

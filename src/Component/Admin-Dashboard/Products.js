@@ -10,7 +10,7 @@ function Products(){
     },[])
 
     const getAllProducts=()=>{
-        fetch('http://localhost:9000/products')
+        fetch('https://fakestoreapi.com/products')  //http://localhost:9000/products
         .then((response)=>(response.json()))
         .then((data)=>
             {setProduct(data)
@@ -33,7 +33,9 @@ function Products(){
                     text: "Your product has been deleted.",
                     icon: "success"
                 });
-          fetch(`http://localhost:9000/products/${productId}`,{
+        // fetch(`http://localhost:9000/products/products/${productId}`)  
+
+          fetch(`https://fakestoreapi.com/products/${productId}`,{  
             method:'DELETE',
         })
         .then((response)=>(response.json()))
