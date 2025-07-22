@@ -7,6 +7,8 @@ import { Dropdown } from 'react-bootstrap';
 
 function Navbar ({setToken ,token , CartItem ,deleteCart}){
   const [showBell , setShowBell] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
   const navigate = useNavigate()
 
   const loginHandler = () =>{
@@ -17,7 +19,15 @@ function Navbar ({setToken ,token , CartItem ,deleteCart}){
     setToken("");
     localStorage.clear();
     navigate('/login');
+    setIsOpen(false)
   }
+const handleClickLink = () => {
+  setIsOpen(false);
+ const closeBtn = document.querySelector('.btn-close');
+  if (closeBtn) {
+    closeBtn.click();
+  }
+};
 
     return(
       <>
@@ -27,7 +37,7 @@ function Navbar ({setToken ,token , CartItem ,deleteCart}){
             <img  className="Icon" src={imageNav1} alt="NoLogo"/>
             <span><Link className="shop-title" to='/'  href="#Home"> Shopping </Link></span>
           </div>  
-          <button className="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas" 
+          <button onClick={()=>setIsOpen(!isOpen)} className="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas" 
           data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon bg-light"></span>
           </button>
@@ -40,16 +50,16 @@ function Navbar ({setToken ,token , CartItem ,deleteCart}){
             <div className="offcanvas-body">
                 <ul className=" navbar-nav justify-content-center flex-grow-1 ">
                     <li className="nav-item">
-                    <Link className="nav-link " to='/' href="#Home">Home</Link></li>
+                    <Link className="nav-link " to='/' href="#Home" onClick={handleClickLink}>Home</Link></li>
   <li className="nav-item  ">
-        <Link className="nav-link " to='/allProducts' href="#AllProducts" > Products </Link>
+        <Link className="nav-link " to='/allProducts' href="#AllProducts" onClick={handleClickLink}> Products </Link>
         </li>
-                    <li className="nav-item"><Link className="nav-link" to='/offer' href="#Offers">Offers</Link></li>
-                    <li className="nav-item"><Link className="nav-link" to='/about' href="#About Us">About Us</Link></li>
-                    <li className="nav-item"><Link className="nav-link" to='/contactUs' href="#Contact Us">Contact Us</Link></li>
+                    <li className="nav-item"><Link className="nav-link" to='/offer' href="#Offers" onClick={handleClickLink}>Offers</Link></li>
+                    <li className="nav-item"><Link className="nav-link" to='/about' href="#About Us" onClick={handleClickLink}>About Us</Link></li>
+                    <li className="nav-item"><Link className="nav-link" to='/contactUs' href="#Contact Us" onClick={handleClickLink}>Contact Us</Link></li>
                     </ul>
-                 {!token ? <Link onClick={loginHandler} className="btn btn-primary fw-bold btn-login" to='/login' href="#login">Login</Link>:
-                 <div> <button className='btn btn-primary fs-5  fw-bold me-2  btn-admin' onClick={loginHandler}> Admin </button> </div> } 
+                 {!token ? <Link onClick={loginHandler}  className="btn btn-primary fw-bold btn-login" to='/login' href="#login" >Login</Link>:
+                 <div> <button className='btn btn-primary fs-5  fw-bold me-2  btn-admin' onClick={loginHandler} > Admin </button> </div> } 
            {token ? <div> <Link to='/login' onClick={logoutHandler} className="btn btn-primary fs-5 ml-5 me-2 fw-bold btn-logout " href="#logout">logout</Link></div>: null } 
 
   <Dropdown onMouseEnter={()=>setShowBell(true)} onMouseLeave={()=>setShowBell(false)} >
