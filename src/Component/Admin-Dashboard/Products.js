@@ -33,7 +33,7 @@ function Products(){
                     text: "Your product has been deleted.",
                     icon: "success"
                 });
-          fetch(`http://localhost:9000/products/${productId}`,{
+          fetch(`https://api.jsonbin.io/v3/b/687e51297b4b8670d8a4e427/${productId}`,{
             method:'DELETE',
         })
         .then((response)=>(response.json()))
