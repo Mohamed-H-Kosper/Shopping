@@ -6,6 +6,7 @@
     backdrop-filter: blur(200px);
     -webkit-backdrop-filter: blur(200px);
     color: #569dd3 !important;
+
 }
 .shop-title{
     color: #3690d4 !important;
@@ -85,10 +86,6 @@ font-size: 19px !important;
         box-shadow:0px 3px 0px #1BA1E2;
         color:white;    
     }
-    /* .nav-item .dropdown-menu .dropdown-item{
-        color:white;
-        background-color: black;
-    } */
     .image-notify1{
         margin-left: 25px !important;
         position: relative;

@@ -13,22 +13,31 @@ function Navbar ({setToken ,token , CartItem ,deleteCart}){
 
   const loginHandler = () =>{
       navigate('/products');
+       const closeBtn = document.querySelector('.btn-close');
+  if (closeBtn) {
+    setIsOpen(false)
+    closeBtn.click();
+  }
   }
 
   const logoutHandler = () =>{
     setToken("");
     localStorage.clear();
     navigate('/login');
+
+ const closeBtn = document.querySelector('.btn-close');
+  if (closeBtn) {
     setIsOpen(false)
+    closeBtn.click();
+  }
   }
 const handleClickLink = () => {
   setIsOpen(false);
  const closeBtn = document.querySelector('.btn-close');
-  if (closeBtn) {
+  if (closeBtn ) {
     closeBtn.click();
   }
-};
-
+}
     return(
       <>
     <nav className="navbar  navbar-expand-xl nav-ground sticky-top  ">
@@ -58,9 +67,9 @@ const handleClickLink = () => {
                     <li className="nav-item"><Link className="nav-link" to='/about' href="#About Us" onClick={handleClickLink}>About Us</Link></li>
                     <li className="nav-item"><Link className="nav-link" to='/contactUs' href="#Contact Us" onClick={handleClickLink}>Contact Us</Link></li>
                     </ul>
-                 {!token ? <Link onClick={loginHandler}  className="btn btn-primary fw-bold btn-login" to='/login' href="#login" >Login</Link>:
-                 <div> <button className='btn btn-primary fs-5  fw-bold me-2  btn-admin' onClick={loginHandler} > Admin </button> </div> } 
-           {token ? <div> <Link to='/login' onClick={logoutHandler} className="btn btn-primary fs-5 ml-5 me-2 fw-bold btn-logout " href="#logout">logout</Link></div>: null } 
+                 {!token ? <Link onClick={loginHandler}  className=" btn btn-primary fw-bold btn-login" to='/login' href="#login" >Login</Link>:
+                 <div> <button className=' btn btn-primary fs-5  fw-bold me-2  btn-admin' onClick={loginHandler} > Admin </button> </div> } 
+           {token ? <div> <Link to='/login' onClick={logoutHandler} className=" btn btn-primary fs-5 ml-5 me-2 fw-bold btn-logout " href="#logout">logout</Link></div>: null } 
 
   <Dropdown onMouseEnter={()=>setShowBell(true)} onMouseLeave={()=>setShowBell(false)} >
       <Dropdown.Toggle className='bg-transparent no-border no-arrow image-notify1 ' >
