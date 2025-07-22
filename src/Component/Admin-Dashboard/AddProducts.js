@@ -9,7 +9,7 @@ function AddProducts() {
   const navigate = useNavigate();
   const formSubmit = (e) => {
     e.preventDefault();
-      axios.post(`https://api.jsonbin.io/v3/b/687e51297b4b8670d8a4e427`, {
+      axios.post(` http://localhost:9000/products`, {
         title: title,
         price: price,
         description: description
