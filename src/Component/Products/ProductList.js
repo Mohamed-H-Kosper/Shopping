@@ -96,7 +96,7 @@ function ProductList(props){
         <div className="d-flex mt-4 mb-1 m-5 align-items-center justify-content-end form-search " role="search" >
                 <input data-aos="fade-left" type="text" className="form  co-bg-light search-products" onChange={handleChange} value={products.category} id="search"  placeholder="Search" aria-label="Search"
                 />
-              <img data-aos="fade-left" src={imageNav2} alt="no" className="btn btn-primary icon-search-products"  id="icon-search"/>
+              <img data-aos="fade-left" src={imageNav2} alt="no"  loading="lazy" className="btn btn-primary icon-search-products"  id="icon-search"/>
               </div>
         <div className=" btns">
         <button  className="btn-all btn btn-dark  p-2 m-2 "  onClick={()=>{getProducts();}} data-aos="fade-up">All Products</button>
@@ -118,7 +118,7 @@ function ProductList(props){
                       <div className='container-fluid'>
                               <div className='row'>
                                     <div className="card card-product mt-5  ">
-                                <img src={filter.image} className="card-img-top p-3" alt='NO' />
+                                <img src={filter.image}  loading="lazy" className="card-img-top p-3" alt='NO' />
                                 <div className="card-body">
                                 <h3 className="card-title"> {filter.title.substring(0,50)}..</h3> 
                                 <p className="card-text">{filter.description.substring(0,65)}.....</p>

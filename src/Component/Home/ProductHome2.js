@@ -77,7 +77,7 @@ function ProductsHome2({onAddCart}) {
                              <div className='container-fluid'>
                                      <div className='row'>
                                            <div className="card card-product mt-5  ">
-                                       <img src={product.image} className="card-img-top p-3" alt='NO' />
+                                       <img src={product.image} className="card-img-top p-3" alt='NO' loading="lazy" />
                                        <div className="card-body">
                                        <h3 className="card-title"> {product.title.substring(0,20)}..</h3> 
                                        <p className="card-text">{product.description.substring(0,84)}.....</p>

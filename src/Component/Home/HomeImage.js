@@ -5,10 +5,10 @@ function HomeImage(){
     return(
         <>
         <div className='img-home' data-aos="zoom-out">
-            <img src={post1} alt="NoPhoto" className='w-100 h-100 imageHome '/>
+            <img src={post1} alt="NoPhoto"  loading="lazy" className='w-100 h-100 imageHome '/>
         </div>
         <div className='d-flex justify-content-center align-items-center img-home2'>
-      <img  className='w-100 image-brands' src={strip3} alt="NoPhoto"/>
+      <img  className='w-100 image-brands'  loading="lazy" src={strip3} alt="NoPhoto"/>
     </div>
     </>
     )

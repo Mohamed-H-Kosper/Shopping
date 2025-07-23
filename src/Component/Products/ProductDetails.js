@@ -43,7 +43,7 @@ function ProductDetails() {
         <div className="card mt-5 mb-5" >
         <div className="contain-details" >
       <div className="col-xl-6 col-lg-8 col-md-12 mt-5">
-        <img className="image-details" src={product.image} alt="no" data-aos="zoom-out"/>
+        <img className="image-details" src={product.image}  loading="lazy" alt="no" data-aos="zoom-out"/>
       </div>
       <div className="card-body col-xl-6 col-lg-4 col-md-12 mt-5" >
         <h2 className="pb-4 fs-3 title-details" data-aos="fade-down">{product.title}</h2>

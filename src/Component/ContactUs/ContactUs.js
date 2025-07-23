@@ -21,7 +21,7 @@ function ContactUs() {
         <div className="container-fluid">
           <div className="row">
             <div className="col-xl-5 col-md-6 col-12">
-              <img className="image-contact2" src={contactImg2} alt="NoPhoto" data-aos="zoom-out-right" />
+              <img className="image-contact2" src={contactImg2} alt="NoPhoto"  loading="lazy" data-aos="zoom-out-right" />
             </div>
             <div className="col-xl-7 col-md-6 col-12" data-aos="fade-left">
               <h1 className="mt-4">Contact Us</h1>

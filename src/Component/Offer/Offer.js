@@ -59,7 +59,7 @@ function Offer(props ){
                  return(
                      <div className='   mt-5 mb-5 p-5 offer-product bg-white' key={product.id} data-aos="fade-down">
                      <div className='col-xl-4 container-image  '>
-                     <img className='image-offer' src={product.image} alt="NoPhoto"  />
+                     <img className='image-offer' src={product.image} alt="NoPhoto"  loading="lazy" />
                      </div>
      
                      <div className='col-xl-7 offer-body  '>
@@ -86,13 +86,13 @@ function Offer(props ){
         <div id="carouselExampleDark" className="carousel slide" data-bs-ride="carousel">
   <div className="carousel-inner">
     <div className="carousel-item active img-home2" data-bs-interval="3000">
-      <img src={image2} className="d-block w-100 imageHome" alt="No img please check internet"/>
+      <img src={image2} className="d-block w-100 imageHome" alt="No img please check internet"  loading="lazy"/>
     </div>
     <div className="carousel-item img-home2" data-bs-interval="3000">
-      <img src={image1} className="d-block w-100 imageHome" alt="No img please check internet"/>
+      <img src={image1} className="d-block w-100 imageHome" alt="No img please check internet"  loading="lazy"/>
     </div>
     <div className="carousel-item img-home2" data-bs-interval="3000">
-      <img src={image3} className="d-block w-100 imageHome" alt="No img please check internet"/>
+      <img src={image3} className="d-block w-100 imageHome" alt="No img please check internet"  loading="lazy"/>
     </div>
   </div>
         <button className="carousel-control-prev  " type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
@@ -111,7 +111,7 @@ function Offer(props ){
                  return(
                      <div className='   mt-5 mb-5 p-5 offer-product bg-white' key={product.id} data-aos="fade-down">
                      <div className='col-xl-4 container-image  '>
-                     <img className='image-offer' src={product.image} alt="NoPhoto"  />
+                     <img className='image-offer' src={product.image} alt="NoPhoto"  loading="lazy" />
                      </div>
      
                      <div className='col-xl-7 offer-body  '>
@@ -155,7 +155,7 @@ function Offer(props ){
                  return(
                      <div className='   mt-5 mb-5 p-5 offer-product bg-white' key={product.id} data-aos="fade-down">
                      <div className='col-xl-4 container-image  '>
-                     <img className='image-offer' src={product.image} alt="NoPhoto"  />
+                     <img className='image-offer' src={product.image} alt="NoPhoto"  loading="lazy" />
                      </div>
      
                      <div className='col-xl-7 offer-body  '>

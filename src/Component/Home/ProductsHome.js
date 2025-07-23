@@ -100,6 +100,7 @@ function ProductsHome({onAddCart}) {
                       src={product.image}
                       className="card-img-top p-3"
                       alt="NO"
+                       loading="lazy"
                     />
                     <div className="card-body">
                       <h3 className="card-title">

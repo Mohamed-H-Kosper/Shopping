@@ -24,7 +24,7 @@ useEffect(()=>{
             return(
                 <div className='   mt-5 mb-5 p-5 offer-product bg-white ' key={product.id} data-aos="fade-up">
                 <div className='col-xl-4 container-image  '>
-                <img className='image-offer' src={product.image} alt="NoPhoto"  />
+                <img className='image-offer'  loading="lazy" src={product.image} alt="NoPhoto"  />
                 </div>
 
                 <div className='col-xl-7 offer-body  '>

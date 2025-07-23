@@ -20,7 +20,7 @@ function ProductDetailsD() {
         <div className="card mt-5 mb-5" style={{border:'3px dashed #0dcaf0'}}>
         <div className="contain-details  ">
       <div className="col-xl-5 col-lg-6 col-md-12 mt-5">
-        <img className="image-details" src={ProductD.image} alt="no" />
+        <img className="image-details" src={ProductD.image} alt="no" loading="lazy" />
       </div>
       <div className="card-body col-xl-7 col-lg-6 col-md-12 mt-5">
         <h2 className="pb-4">{ProductD.title}</h2>

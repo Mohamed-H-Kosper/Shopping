@@ -54,6 +54,7 @@ const Buy = () => {
                 <img
                   src={product.image}
                   alt={product.title}
+                   loading="lazy"
                   className="card-img-top"
                   style={{ maxHeight: "300px", objectFit: "contain" , marginTop:'20px' }}
                 />

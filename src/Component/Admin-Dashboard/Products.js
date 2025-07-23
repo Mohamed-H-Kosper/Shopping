@@ -67,7 +67,7 @@ function Products(){
                 return(
                     <tr key={product.id}>
                     <td className="fw-bold fs-5 col-1" >{product.id}</td>
-                    <td ><img className="col-1 imageD" src={product.image} alt="no" /></td>
+                    <td ><img className="col-1 imageD"  loading="lazy" src={product.image} alt="no" /></td>
                     <td className="col-2  ">{product.title}</td>
                     <td className="col-2  text-center">{product.description.slice(1,110)}.....</td>
                     <td className=" col-2  text-center fw-bold" style={{color:'#0dcaf0'}}>{product.price} $</td>

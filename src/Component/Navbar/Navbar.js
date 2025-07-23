@@ -43,7 +43,7 @@ const handleClickLink = () => {
     <nav className="navbar  navbar-expand-xl nav-ground sticky-top  ">
         <div className="container">
          <div className="navbar-brand">  
-            <img  className="Icon" src={imageNav1} alt="NoLogo"/>
+            <img  className="Icon" src={imageNav1} alt="NoLogo"  loading="lazy"/>
             <span><Link className="shop-title" to='/'  href="#Home"> Shopping </Link></span>
           </div>  
           <button onClick={()=>setIsOpen(!isOpen)} className="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas" 
@@ -73,7 +73,7 @@ const handleClickLink = () => {
 
   <Dropdown onMouseEnter={()=>setShowBell(true)} onMouseLeave={()=>setShowBell(false)} >
       <Dropdown.Toggle className='bg-transparent no-border no-arrow image-notify1 ' >
-      <img className='image-notify2  ml-2' src={notification}  alt= 'notify' />  
+      <img className='image-notify2  ml-2' src={notification}  alt= 'notify'  loading="lazy"/>  
            <span className='num-notify'>{CartItem.length}</span>   
       </Dropdown.Toggle>
       
