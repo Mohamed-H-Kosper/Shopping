@@ -86,13 +86,13 @@ function Offer(props ){
         <div id="carouselExampleDark" className="carousel slide" data-bs-ride="carousel">
   <div className="carousel-inner">
     <div className="carousel-item active img-home2" data-bs-interval="3000">
-      <img src={image2} className="d-block w-100 imageHome" alt="No img please check internet"  loading="lazy"/>
+      <img src={image2} className="d-block w-100 imageHome" alt="No img please check internet"  />
     </div>
     <div className="carousel-item img-home2" data-bs-interval="3000">
-      <img src={image1} className="d-block w-100 imageHome" alt="No img please check internet"  loading="lazy"/>
+      <img src={image1} className="d-block w-100 imageHome" alt="No img please check internet" />
     </div>
     <div className="carousel-item img-home2" data-bs-interval="3000">
-      <img src={image3} className="d-block w-100 imageHome" alt="No img please check internet"  loading="lazy"/>
+      <img src={image3} className="d-block w-100 imageHome" alt="No img please check internet" />
     </div>
   </div>
         <button className="carousel-control-prev  " type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
