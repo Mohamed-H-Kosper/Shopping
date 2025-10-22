@@ -17,7 +17,7 @@ useEffect(()=>{
 },[])
     return(
         <>
-        <div className='container-fluid mt-5 mb-5 ' >
+        <div className='container-fluid mt-5 pt-1 mb-5 ' >
         <div className='row  '>
         <h2 className='text-white fs-4 fw-bold' style={{textShadow:"2px 2px 7px black"}} data-aos="fade-right">Offer available now !</h2>
         {products.map((product) =>{

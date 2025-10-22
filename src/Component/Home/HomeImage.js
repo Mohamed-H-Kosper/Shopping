@@ -1,6 +1,7 @@
 import post1 from '../images/post1.jpg';
 import strip3 from '../images/strip3.jpg'
 import "./HomeImage.css";
+
 function HomeImage(){
     return(
         <>
