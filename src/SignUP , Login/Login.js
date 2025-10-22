@@ -35,9 +35,9 @@ function Login({token , setToken}) {
 
   return (
     <>
-        <h1 className="d-flex justify-content-center align-items-center text-secondary mt-4" style={{textShadow:'2px 2px 4px white'}} data-aos="zoom-out"> Admin Dashboard Login</h1>
+        <h1 className="d-flex justify-content-center align-items-center text-secondary mt-4" style={{textShadow:'2px 2px 4px white'}} > Admin Dashboard Login</h1>
     <div className="Login mb-5 mt-5 ">
-    <form onSubmit={handleLogin} className='total-form' data-aos="zoom-in">
+    <form onSubmit={handleLogin} className='total-form' >
       <div className='username'>
         <label htmlFor="username" className='label-form' > Username</label>
         <input className='form-control' value={username} onChange={(e)=> setUserName(e.target.value)} type="text" placeholder="User Name" id="username" required />
@@ -60,8 +60,8 @@ function Login({token , setToken}) {
             </div>
     </form>
     <div style={{textAlign:'start',marginTop:'15px'}} >
-    <h4 className='fw-bold text-primary form-control' data-aos="fade-right">Username : emilys </h4>
-    <h4 className='fw-bold text-primary form-control' data-aos="fade-left">password : emilyspass </h4>
+    <h4 className='fw-bold text-primary form-control' >Username : emilys </h4>
+    <h4 className='fw-bold text-primary form-control'>password : emilyspass </h4>
     </div>
     </div>
 

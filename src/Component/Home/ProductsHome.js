@@ -115,16 +115,20 @@ function ProductsHome({onAddCart}) {
                       <p className="card-price text-info fs-4 fw-bold">
                         {product.price} $
                       </p>
+                     
                       <Link
                         className="btn btn-success fw-bold "
                         style={{ fontSize: "15px" }}
                         id="btn-more"
                         to={`/product/${product.id}`}
                         data-aos="fade-right"
+                      onClick={()=> {window.scrollTo({ top: 0, behavior: "smooth" });}}
                       >
                         More Details
                       </Link>
+                      
                     </div>
+                    
                     <button
                     type="button"
                       className="btn btn-sm btn-secondary  mb-3 w-100"

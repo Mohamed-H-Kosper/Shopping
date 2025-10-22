@@ -20,6 +20,7 @@ import Navbar from "./Component/Navbar/Navbar";
 import Buy from "./Component/BuyNow/Buy";
 import Aos from "aos";
 import 'aos/dist/aos.css';
+import ScrollToTop from "./scroll-to-top/ScrollToTop";
 
 function App() {
     useEffect(()=>{
@@ -65,6 +66,8 @@ useLayoutEffect(() => {
 
   return (
     <>
+      <ScrollToTop />
+    
       <Navbar CartItem={CartItem} deleteCart = {handleDeleteCart} setToken={setToken} token={token}  />
         <Background />
       <Routes>
